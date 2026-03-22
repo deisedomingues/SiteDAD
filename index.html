@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Portfólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+   <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+
+    <section id="sobre"> ... </section>
+    <section id="habilidades"> ... </section>
+    <section id="projetos"> ... </section>
+    <section id="certificados"> ... </section>
+    <section id="formacao"> ... </section>
+    <section id="contato"> ... </section>
+
+    <!-- Apresentação -->
+    <header class="hero">
+        <img src="imagens/foto-perfil.png" alt="Foto de perfil" class="perfil">
+        <h1>Seu Nome</h1>
+        <h2>Estudante de [Área] | Aspirante à TI</h2>
+        <p>Buscando minha primeira oportunidade para aplicar conhecimentos acadêmicos em projetos práticos. Comprometido com soluções eficientes, trabalho em equipe e aprendizado contínuo.</p>
+        <div class="botoes">
+            <a href="#contato" class="btn btn-contato">Entre em Contato</a>
+            <a href="imagens/curriculo.pdf" class="btn btn-curriculo" download>Baixar Currículo</a>
+        </div>
+    </header>
+
+    <!-- Certificados -->
+    <section id="certificados">
+        <h2>Certificados</h2>
+        <ul>
+            <li><a href="https://link-do-certificado1.com" target="_blank">Certificado 1</a></li>
+            <li><a href="https://link-do-certificado2.com" target="_blank">Certificado 2</a></li>
+            <li><a href="https://link-do-certificado3.com" target="_blank">Certificado 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Contato -->
+    <footer id="contato">
+        <h2>Contato</h2>
+        <p>Email: seuemail@exemplo.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/seuusuario" target="_blank">linkedin.com/in/seuusuario</a></p>
+    </footer>
+
+    <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    // Abre/fecha o menu ao clicar no ícone
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+
+    // Fecha o menu ao clicar em qualquer link
+    const links = menu.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('show');
+        });
+    });
+    </script>
+
+
+</body>
+</html>

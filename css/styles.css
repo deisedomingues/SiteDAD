@@ -1,0 +1,172 @@
+/* ============================
+   Paleta de cores do site
+   Terracota (#bb6f58), Preto (#000000), Marfim (#F5F5DC)
+   ============================ */
+
+/* Configuração geral da página */
+html {
+    scroll-behavior: smooth; /* ativa rolagem suave ao clicar nos links */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #F5F5DC;
+    padding-top: 70px; /* espaço para não esconder conteúdo atrás da navbar fixa */
+}
+
+/* ============================
+   Navbar fixa no topo
+   ============================ */
+.navbar {
+    background-color: #bb6f58;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* centraliza o menu no desktop */
+    align-items: center;
+}
+
+/* Menu padrão (desktop) */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* links centralizados */
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    color: #F5F5DC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ícone hambúrguer (aparece apenas em telas pequenas) */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #F5F5DC;
+    cursor: pointer;
+    position: absolute;
+    left: 15px; /* ícone fica à esquerda */
+}
+
+/* ============================
+   Seção de apresentação (Hero)
+   ============================ */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.perfil {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #bb6f58;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+.hero h2 {
+    font-size: 1.2rem;
+    color: #bb6f58;
+}
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* ============================
+   Botões de ação
+   ============================ */
+.botoes {
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-contato {
+    background-color: #bb6f58;
+    color: #F5F5DC;
+}
+.btn-curriculo {
+    background-color: #F5F5DC;
+    color: #000000;
+}
+
+/* ============================
+   Seções gerais (Sobre, Projetos, Certificados, etc.)
+   ============================ */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+section h2 {
+    color: #bb6f58;
+    margin-bottom: 20px;
+}
+section ul {
+    list-style: none;
+    padding: 0;
+}
+section li {
+    margin: 10px 0;
+}
+section a {
+    color: #F5F5DC;
+    text-decoration: underline;
+}
+
+/* ============================
+   Rodapé (Contato)
+   ============================ */
+footer {
+    background-color: #bb6f58;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #F5F5DC;
+}
+
+/* ============================
+   Responsividade (telas menores)
+   ============================ */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* mostra ícone hambúrguer */
+    }
+
+    /* Menu ocupa toda a largura e centraliza os itens */
+    .navbar ul {
+        display: none; /* escondido por padrão */
+        flex-direction: column;
+        background-color: #bb6f58;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%; /* ocupa toda a largura da tela */
+        text-align: center; /* centraliza os links */
+        padding: 15px 0;
+    }
+
+    .navbar ul.show {
+        display: flex; /* aparece quando clicado */
+    }
+
+    .navbar li {
+        margin: 15px 0;
+        display: block;
+    }
+}
