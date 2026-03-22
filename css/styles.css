@@ -358,3 +358,62 @@ footer a {
     text-decoration: none;
     font-weight: bold;
 }
+.foto-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* Foto circular */
+.foto-perfil {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #bb6f58; /* terracota */
+    z-index: 2;
+}
+
+.foto-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* Foto circular */
+.foto-perfil {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #bb6f58; /* terracota */
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Linhas onduladas atrás */
+.ondas {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    z-index: 1;
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 10px,
+        rgba(187, 111, 88, 0.4) 11px,
+        transparent 20px
+    );
+    border-radius: 50%;
+    animation: ondasMove 60s infinite linear;
+}
+
+/* Animação suave das ondas */
+@keyframes ondasMove {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
