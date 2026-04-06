@@ -1,265 +1,342 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Portfólio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deise Domingues</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <!-- Navegação -->
-   <nav class="navbar">
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <nav class="navbar">
+    <div class="nav-logo">DD</div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
     <ul id="menu">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#certificados">Certificados</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
-</nav>
+  </nav>
 
+  <header class="hero">
+    <div class="hero-texto">
+      <h1>Deise Domingues</h1>
+      <h2>Analista e Desenvolvedora de Sistemas</h2>
 
-    <section id="sobre"> ... </section>
-    <section id="habilidades"> ... </section>
-    <section id="projetos"> ... </section>
-    <section id="certificados"> </section>
-    <section id="formacao"> </section>
-    <section id="contato"> ... </section>
-
-    <!-- Apresentação -->
-    <header class="hero">
-    
-        <section id="foto">
-        <div class="foto-container">
-            <img src="imagens/Deise.jpg" alt="Foto de Deise" class="foto-perfil">
-            <div class="ondas"></div>
-            
-        </div>
-        </section>
-
-        <h1>Deise Domingues</h1>
-        <h2>Estudante de [Área] | Aspirante à TI</h2>
-        <p>Buscando minha primeira oportunidade para aplicar conhecimentos acadêmicos em projetos práticos. Comprometido com soluções eficientes, trabalho em equipe e aprendizado contínuo.</p>
-        <div class="botoes">
-            <a href="#contato" class="btn btn-contato">Entre em Contato</a>
-            <a href="imagens/curriculo.pdf" class="btn btn-curriculo" download>Baixar Currículo</a>
-        </div>
-    </header>
-
-    <section id="sobre">
-  <h2>Sobre</h2>
-  <div class="sobre-container">
-
-    <!-- Perfil Profissional -->
-    <div class="sobre-card">
-      <h3>Perfil Profissional</h3>
       <p>
-        Sou graduanda em Análise e Desenvolvimento de Sistemas pela Fatec Ipiranga, com conclusão prevista para 2025. 
-        Estou em busca da primeira oportunidade no mercado de tecnologia para aplicar meus conhecimentos acadêmicos em projetos práticos. 
-        Tenho interesse em desenvolvimento de software, soluções inovadoras e aprendizado contínuo, sempre com foco em agregar valor e colaborar em equipe.
+        Buscando minha primeira oportunidade para aplicar conhecimentos acadêmicos em projetos práticos.
+        Comprometida com soluções eficientes, aprendizado contínuo e trabalho em equipe.
       </p>
+
+      <div class="botoes">
+        <a href="#contato" class="btn btn-primario">Entre em Contato</a>
+        <a href="imagens/Curriculo Deise Domingues.pdf" class="btn btn-secundario" download>Baixar Currículo</a>
+      </div>
     </div>
 
-    <!-- Quem Sou Eu -->
-    <div class="sobre-card">
-      <h3>Quem Sou Eu</h3>
-      <p>
-        Além da tecnologia, atuo como artista independente e compartilho meus trabalhos no Instagram 
-        <a href="https://www.instagram.com/oficinamargarida/" target="_blank">@oficinamargarida</a>. 
-        Não me identifico com o termo “artesã”, pois não sigo uma linha de produção: cada peça que crio é única, feita com cuidado e significado. 
-        Amo presentear, cozinhar, ler e estudar — atividades que refletem minha curiosidade e dedicação em tudo que faço.
-      </p>
-      <p>
-        Sou mãe de dois filhos e minha trajetória é marcada por descobertas: já iniciei nove cursos superiores antes de me encontrar em ADS. 
-        Essa diversidade de experiências me tornou resiliente, criativa e aberta a novos desafios.
-      </p>
+    <div class="hero-foto">
+      <div class="foto-decoracao"></div>
+      <div class="foto-container">
+        <img src="imagens/Deise.jpg" alt="Foto de Deise" class="foto-perfil">
+      </div>
     </div>
+  </header>
 
-  </div>
-</section>
+  <main>
+    <section id="sobre" class="section">
+      <div class="section-header">
+        <h2>Sobre</h2>
+      </div>
 
+      <div class="sobre-container">
+        <article class="card">
+          <h3>Perfil Profissional</h3>
+          <p>
+            Sou graduanda em Análise e Desenvolvimento de Sistemas pela Fatec Ipiranga, com conclusão prevista para 2025.
+            Estou em busca da primeira oportunidade no mercado de tecnologia para aplicar meus conhecimentos acadêmicos em projetos práticos.
+            Tenho interesse em desenvolvimento de software, soluções inovadoras e aprendizado contínuo, sempre com foco em agregar valor e colaborar em equipe.
+          </p>
+        </article>
 
-    <section id="formacao">
-    <h2>Formação Acadêmica</h2>
-    <div class="formacao-container">
-
-        <div class="formacao-card">
-        <i class="fa-solid fa-graduation-cap formacao-icon"></i>
-        <h3>Análise e Desenvolvimento de Sistemas</h3>
-        <p>Fatec Ipiranga — Início em 2019, conclusão em 2025.</p>
-        <p>Graduação voltada para desenvolvimento de software, engenharia de sistemas e gestão de projetos de TI.</p>
-        
-        <!-- Link direto para o PPC -->
-        <a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/70/2024/04/PPC_ADS_Fatec_Ipiranga_2023-1-Adequacao-Diretrizes-Curriculares.pdf#page=23" 
-            target="_blank" class="btn-formacao">
-            Ver Matriz Curricular
-        </a>
-        </div>
-
-    </div>
+        <article class="card">
+          <h3>Quem Sou Eu</h3>
+          <p>
+            Além da tecnologia, atuo como artista independente e compartilho meus trabalhos no Instagram
+            <a href="https://www.instagram.com/oficinamargarida/" target="_blank">@oficinamargarida</a>.
+            Não me identifico com o termo “artesã”, pois não sigo uma linha de produção: cada peça que crio é única, feita com cuidado e significado.
+            Amo presentear, cozinhar, ler e estudar — atividades que refletem minha curiosidade e dedicação em tudo que faço.
+          </p>
+          <p>
+            Sou mãe de dois filhos e minha trajetória é marcada por descobertas: já iniciei nove cursos superiores antes de me encontrar em ADS.
+            Essa diversidade de experiências me tornou resiliente, criativa e aberta a novos desafios.
+          </p>
+        </article>
+      </div>
     </section>
 
+    <section id="habilidades" class="section">
+      <div class="section-header">
+        <h2>Habilidades</h2>
+      </div>
 
-    <!-- Certificados -->
-    <section id="certificados">
-  <h2>Certificados</h2>
-  <div class="certificados-container">
+      <div class="habilidades-grid">
+        <div class="skill-card">
+          <i class="fa-solid fa-comments"></i>
+          <span>Comunicação clara e empática</span>
+        </div>
 
-    <!-- Primeiro certificado: Libras -->
-    <div class="certificado-card">
-      <h3>Tradutor e Intérprete de Libras</h3>
-      <p>Certificação em tradução e interpretação da Língua Brasileira de Sinais.</p>
-      <a href="https://cursos.poca.ufscar.br/mod/simplecertificate/verify.php?code=6102a528-6504-466e-9b38-c20100000000" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-list-check"></i>
+          <span>Organização e atenção aos detalhes</span>
+        </div>
 
-    <!-- Formação Figma -->
-    <div class="certificado-card">
-      <h3>Formação Figma - Alura</h3>
-      <p>Curso de design de interfaces e prototipagem com Figma.</p>
-      <a href="https://cursos.alura.com.br/degree/certificate/488ee107-e52a-4eaa-9b89-2ce2c367a71b?lang" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <span>Resolução de problemas</span>
+        </div>
 
-    <!-- Social Media -->
-    <div class="certificado-card">
-      <h3>Social Media: Estratégias para Crescer e Engajar</h3>
-      <p>Curso sobre estratégias de marketing digital e engajamento em redes sociais.</p>
-      <a href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1754858786/0535243959DD.pdf" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-brain"></i>
+          <span>Facilidade de aprendizado</span>
+        </div>
 
-    <!-- Design Thinking -->
-    <div class="certificado-card">
-      <h3>Design Thinking: Criando Soluções Inovadoras</h3>
-      <p>Curso sobre metodologias criativas com foco no usuário.</p>
-      <a href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1754855499/2904613168DD.pdf" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-shield-heart"></i>
+          <span>Responsabilidade e comprometimento</span>
+        </div>
 
-    <!-- Amazon Quicksight -->
-    <div class="certificado-card">
-      <h3>Amazon Quicksight</h3>
-      <p>Certificação em análise de dados e dashboards com Amazon Quicksight.</p>
-      <a href="https://cursos.alura.com.br/certificate/1ea6dc7f-1e0f-4ac8-9878-edc7c1a13574?lang" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-clock"></i>
+          <span>Trabalho com prazos e processos</span>
+        </div>
+      </div>
+    </section>
 
-    <!-- Fundamentos de Gerenciamento de Projetos -->
-    <div class="certificado-card">
-      <h3>Fundamentos do Gerenciamento de Projetos Predictive</h3>
-      <p>Certificação em práticas de gerenciamento de projetos tradicionais.</p>
-      <a href="https://www.credly.com/badges/53a08c72-e227-4048-b7b6-2b9c9f89983f/linked_in_profile" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+    <section id="projetos" class="section">
+      <div class="section-header">
+        <h2>Projetos</h2>
+      </div>
 
-    <!-- Git e Versionamento -->
-    <div class="certificado-card">
-      <h3>Git e Versionamento</h3>
-      <p>Curso sobre controle de versão e colaboração com Git.</p>
-      <a href="https://ada.tech/certificado?code=bf9d8327-e60c-8405-5dc5-1ec80edd22d0" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <i class="fa-brands fa-github"></i>
+          <h3>Projetos de Tecnologia</h3>
+          <p>
+            Veja meus projetos, estudos e códigos desenvolvidos durante minha formação em tecnologia.
+          </p>
+          <a href="https://github.com/deisedomingues" target="_blank" class="btn-card">
+            Ver GitHub
+          </a>
+        </div>
 
-    <!-- Quality Assurance -->
-    <div class="certificado-card">
-      <h3>Quality Assurance: Plano de Testes e Gestão de Bugs</h3>
-      <p>Curso sobre práticas de QA e gerenciamento de defeitos.</p>
-      <a href="https://cursos.alura.com.br/certificate/c8b24b75-d37f-4271-97bb-ff369893ff2c?lang" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="projeto-card">
+          <i class="fa-brands fa-instagram"></i>
+          <h3>Oficina Margarida</h3>
+          <p>
+            Espaço onde compartilho minhas criações artísticas, peças únicas e trabalhos manuais.
+          </p>
+          <a href="https://www.instagram.com/oficinamargarida/" target="_blank" class="btn-card">
+            Ver Instagram
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Endpoint Security -->
-    <div class="certificado-card">
-      <h3>Endpoint Security</h3>
-      <p>Certificação em segurança de dispositivos e proteção de dados.</p>
-      <a href="https://www.credly.com/badges/70eac822-73c0-4c4e-9425-66b6efc45994/linked_in_profile" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+    <section id="certificados" class="section">
+      <div class="section-header">
+        <h2>Certificados</h2>
+      </div>
 
-    <!-- Introduction to Data Science -->
-    <div class="certificado-card">
-      <h3>Introduction to Data Science</h3>
-      <p>Certificação introdutória em ciência de dados e análise estatística.</p>
-      <a href="https://www.credly.com/badges/cb8f9a07-41b4-4f4e-8b81-698b9aaa89ca/linked_in_profile" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+      <div class="certificados-container">
+        <div class="certificado-card">
+          <h3>Tradutor e Intérprete de Libras</h3>
+          <p>Certificação em tradução e interpretação da Língua Brasileira de Sinais.</p>
+          <a href="https://cursos.poca.ufscar.br/mod/simplecertificate/verify.php?code=6102a528-6504-466e-9b38-c20100000000" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- SAS Enterprise Guide -->
-    <div class="certificado-card">
-      <h3>SAS Enterprise Guide 1: Querying and Reporting</h3>
-      <p>Curso sobre consultas e relatórios com SAS Enterprise Guide.</p>
-      <a href="https://www.credly.com/badges/ae695dd3-08c0-461d-9d29-3db79d051a1b/linked_in_profile" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="certificado-card">
+          <h3>Formação Figma - Alura</h3>
+          <p>Curso de design de interfaces e prototipagem com Figma.</p>
+          <a href="https://cursos.alura.com.br/degree/certificate/488ee107-e52a-4eaa-9b89-2ce2c367a71b?lang" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- SAS for Beginners -->
-    <div class="certificado-card">
-      <h3>SAS for Beginners</h3>
-      <p>Curso introdutório sobre análise de dados com SAS.</p>
-      <a href="https://credly.com/badges/5e6cc7e4-efd8-4ca9-9bd2-e3893ab5e6b0/linked_in_profile" target="_blank" class="btn-certificado">Ver certificado</a>
-    </div>
+        <div class="certificado-card">
+          <h3>Social Media: Estratégias para Crescer e Engajar</h3>
+          <p>Curso sobre estratégias de marketing digital e engajamento em redes sociais.</p>
+          <a href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1754858786/0535243959DD.pdf" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-  </div>
-</section>
+        <div class="certificado-card">
+          <h3>Design Thinking: Criando Soluções Inovadoras</h3>
+          <p>Curso sobre metodologias criativas com foco no usuário.</p>
+          <a href="https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1754855499/2904613168DD.pdf" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-<section id="contato">
-  <h2>Contato</h2>
-  <div class="contato-container">
+        <div class="certificado-card">
+          <h3>Amazon Quicksight</h3>
+          <p>Certificação em análise de dados e dashboards com Amazon Quicksight.</p>
+          <a href="https://cursos.alura.com.br/certificate/1ea6dc7f-1e0f-4ac8-9878-edc7c1a13574?lang" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- WhatsApp -->
-    <div class="contato-item">
-      <i class="fa-brands fa-whatsapp contato-icon"></i>
-      <a href="https://wa.me/5511983728274" target="_blank">WhatsApp</a>
-    </div>
+        <div class="certificado-card">
+          <h3>Fundamentos do Gerenciamento de Projetos Predictive</h3>
+          <p>Certificação em práticas de gerenciamento de projetos tradicionais.</p>
+          <a href="https://www.credly.com/badges/53a08c72-e227-4048-b7b6-2b9c9f89983f/linked_in_profile" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- Telefone -->
-    <div class="contato-item">
-      <i class="fa-solid fa-phone contato-icon"></i>
-      <a href="tel:+5511983728274">+55 (11) 98372-8274</a>
-    </div>
+        <div class="certificado-card">
+          <h3>Git e Versionamento</h3>
+          <p>Curso sobre controle de versão e colaboração com Git.</p>
+          <a href="https://ada.tech/certificado?code=bf9d8327-e60c-8405-5dc5-1ec80edd22d0" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- Email -->
-    <div class="contato-item">
-      <i class="fa-solid fa-envelope contato-icon"></i>
-      <a href="mailto:dominguesdeise@gmail.com">dominguesdeise@gmail.com</a>
-    </div>
+        <div class="certificado-card">
+          <h3>Quality Assurance: Plano de Testes e Gestão de Bugs</h3>
+          <p>Curso sobre práticas de QA e gerenciamento de defeitos.</p>
+          <a href="https://cursos.alura.com.br/certificate/c8b24b75-d37f-4271-97bb-ff369893ff2c?lang" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- LinkedIn -->
-    <div class="contato-item">
-      <i class="fa-brands fa-linkedin contato-icon"></i>
-      <a href="https://www.linkedin.com/in/deisedomingues/" target="_blank">LinkedIn</a>
-    </div>
+        <div class="certificado-card">
+          <h3>Endpoint Security</h3>
+          <p>Certificação em segurança de dispositivos e proteção de dados.</p>
+          <a href="https://www.credly.com/badges/70eac822-73c0-4c4e-9425-66b6efc45994/linked_in_profile" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    
+        <div class="certificado-card">
+          <h3>Introduction to Data Science</h3>
+          <p>Certificação introdutória em ciência de dados e análise estatística.</p>
+          <a href="https://www.credly.com/badges/cb8f9a07-41b4-4f4e-8b81-698b9aaa89ca/linked_in_profile" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-    <!-- GitHub -->
-    <div class="contato-item">
-      <i class="fa-brands fa-github contato-icon"></i>
-      <a href="https://github.com/deisedomingues" target="_blank">GitHub</a>
-    </div>
+        <div class="certificado-card">
+          <h3>SAS Enterprise Guide 1: Querying and Reporting</h3>
+          <p>Curso sobre consultas e relatórios com SAS Enterprise Guide.</p>
+          <a href="https://www.credly.com/badges/ae695dd3-08c0-461d-9d29-3db79d051a1b/linked_in_profile" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
 
-  </div>
-</section>
+        <div class="certificado-card">
+          <h3>SAS for Beginners</h3>
+          <p>Curso introdutório sobre análise de dados com SAS.</p>
+          <a href="https://credly.com/badges/5e6cc7e4-efd8-4ca9-9bd2-e3893ab5e6b0/linked_in_profile" target="_blank" class="btn-card">Ver certificado</a>
+        </div>
+      </div>
+    </section>
 
+    <section id="formacao" class="section">
+      <div class="section-header">
+        <h2>Formação</h2>
+      </div>
 
+      <div class="formacao-container" style="gap: 22px; flex-wrap: wrap; align-items: stretch;">
+        <div class="formacao-card" style="flex: 1 1 420px;">
+          <i class="fa-solid fa-graduation-cap formacao-icon"></i>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p><strong>Fatec Ipiranga</strong> — Início em 2019, conclusão em 2025.</p>
+          <p>
+            Formação voltada para programação em diferentes linguagens, modelagem e implementação de bancos de dados,
+            engenharia e testes de software, sistemas operacionais, redes, hardware e arquitetura de computadores.
+            O curso também integra gestão de projetos, governança de TI, negócios, raciocínio lógico, estatística,
+            otimização de processos, comunicação, interação humano-computador, ética e responsabilidade social.
+          </p>
+          <a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/70/2024/04/PPC_ADS_Fatec_Ipiranga_2023-1-Adequacao-Diretrizes-Curriculares.pdf#page=23" target="_blank" class="btn-card">
+            Ver Matriz Curricular
+          </a>
+        </div>
 
-    <!-- Contato -->
-    <footer id="contato">
+        <div class="formacao-card" style="flex: 1 1 420px;">
+
+  <!-- SELO -->
+  <div class="selo-cursando">CURSANDO</div>
+
+  <i class="fa-solid fa-database formacao-icon"></i>
+
+  <h3>Big Data para Negócios</h3>
+
+  <p><strong>Início em agosto de 2026, conclusão prevista para dezembro de 2027.</strong></p>
+
+  <p>
+    Graduação voltada para técnicas e ferramentas de captura, tratamento, processamento e análise de grandes volumes de dados,
+    com foco na extração de informações valiosas para a tomada de decisões nas organizações. O curso reúne matemática para computação,
+    estatística, bancos de dados relacionais e NoSQL, programação, business intelligence, big data, aprendizado de máquina,
+    inteligência artificial, visualização de dados e gestão de negócios, preparando para a criação de sistemas e soluções inteligentes
+    com foco em estratégia, competitividade e governança dos dados.
+  </p>
+
+  <a href="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/70/2024/02/PPC_BigData_Ensino_Hibrido_Ipiranga_2023-1_novo.pdf#page=21" target="_blank" class="btn-card">
+    Ver Matriz Curricular
+  </a>
+
+</div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="section-header">
         <h2>Contato</h2>
-        <p>Email: seuemail@exemplo.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/seuusuario" target="_blank">linkedin.com/in/seuusuario</a></p>
-    </footer>
+      </div>
 
-    <script>
+      <div class="contato-container">
+        <div class="contato-item">
+          <i class="fa-brands fa-whatsapp contato-icon"></i>
+          <a href="https://wa.me/5511983728274" target="_blank">WhatsApp</a>
+        </div>
+
+        <div class="contato-item">
+          <i class="fa-solid fa-phone contato-icon"></i>
+          <a href="tel:+5511983728274">+55 (11) 98372-8274</a>
+        </div>
+
+        <div class="contato-item">
+          <i class="fa-solid fa-envelope contato-icon"></i>
+          <a href="mailto:dominguesdeise@gmail.com">dominguesdeise@gmail.com</a>
+        </div>
+
+        <div class="contato-item">
+          <i class="fa-brands fa-linkedin contato-icon"></i>
+          <a href="https://www.linkedin.com/in/deisedomingues/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="contato-item">
+          <i class="fa-brands fa-github contato-icon"></i>
+          <a href="https://github.com/deisedomingues" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 • Deise Domingues • Portfólio profissional</p>
+  </footer>
+
+  <script>
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
-    // Abre/fecha o menu ao clicar no ícone
     toggle.addEventListener('click', () => {
-        menu.classList.toggle('show');
+      menu.classList.toggle('show');
     });
 
-    // Fecha o menu ao clicar em qualquer link
     const links = menu.querySelectorAll('a');
     links.forEach(link => {
-        link.addEventListener('click', () => {
-            menu.classList.remove('show');
-        });
+      link.addEventListener('click', () => {
+        menu.classList.remove('show');
+      });
     });
-    </script>
-
-
+  </script>
 </body>
 </html>
